@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digi Bhargavi Consultancy - Giddalur | Digital & Legal Services</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <!-- Sticky Navbar -->
+    <nav class="bg-white/95 backdrop-blur-md sticky top-0 z-50 border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <!-- Brand Logo & Name -->
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-blue-700 rounded-lg flex items-center justify-center text-white font-bold text-xl shadow-md">
+                        DB
+                    </div>
+                    <div>
+                        <span class="font-extrabold text-lg sm:text-xl text-slate-900 tracking-tight block leading-none">Digi Bhargavi</span>
+                        <span class="text-xs font-semibold text-blue-600 uppercase tracking-wider">Consultancy</span>
+                    </div>
+                </div>
+
+                <!-- Navigation Links -->
+                <div class="hidden md:flex space-x-8 font-medium text-slate-600">
+                    <a href="#services" class="hover:text-blue-700 transition">Services</a>
+                    <a href="#checklist" class="hover:text-blue-700 transition">Document Checklist</a>
+                    <a href="#about" class="hover:text-blue-700 transition">Why Us</a>
+                    <a href="#contact" class="hover:text-blue-700 transition">Contact</a>
+                </div>
+
+                <!-- Phone & WhatsApp Actions -->
+                <div class="flex items-center space-x-2">
+                    <a href="tel:8331830013" class="hidden sm:inline-flex items-center px-3 py-2 text-sm font-semibold text-blue-700 bg-blue-50 hover:bg-blue-100 rounded-lg transition">
+                        <i class="fas fa-phone-alt mr-2"></i> 8331830013
+                    </a>
+                    <a href="https://wa.me/918331830013?text=Hello%20Digi%20Bhargavi%20Consultancy,%20I%20need%20assistance%20with%20a%20service." target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-4 py-2 text-sm font-semibold text-white bg-green-600 hover:bg-green-700 rounded-lg shadow-sm transition">
+                        <i class="fab fa-whatsapp mr-2 text-base"></i> WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white py-16 sm:py-24 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="max-w-3xl">
+                <div class="inline-flex items-center px-3 py-1 rounded-full bg-blue-500/20 border border-blue-400/30 text-blue-200 text-xs sm:text-sm font-medium mb-6">
+                    <i class="fas fa-map-marker-alt mr-2 text-amber-400"></i> Serving Giddalur & Surrounding Areas
+                </div>
+                <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight leading-tight mb-6">
+                    Fast, Reliable Digital & Business Registration Services
+                </h1>
+                <p class="text-lg sm:text-xl text-slate-300 mb-8 leading-relaxed">
+                    Your trusted one-stop center for PAN Cards, GST Filings, Passport Assistance, FSSAI Food Licenses, and Labour Registrations. Hassle-free processing with complete guidance.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#services" class="inline-flex justify-center items-center px-6 py-3.5 text-base font-bold text-slate-900 bg-amber-400 hover:bg-amber-300 rounded-xl shadow-lg transition">
+                        Explore Our Services <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                    <a href="#checklist" class="inline-flex justify-center items-center px-6 py-3.5 text-base font-semibold text-white bg-white/10 hover:bg-white/20 border border-white/20 rounded-xl transition">
+                        Check Required Documents
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-14">
+            <span class="text-blue-600 font-bold text-sm uppercase tracking-wider">What We Offer</span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2">Our Core Consultancy Services</h2>
+            <p class="text-slate-600 mt-3">Click on any service below to instantly inquire via WhatsApp with pre-filled details.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+            <!-- Service 1: PAN Card -->
+            <div class="service-card bg-white rounded-2xl p-6 border border-slate-200 transition duration-300 flex flex-col justify-between">
+                <div>
+                    <div class="w-12 h-12 bg-blue-100 text-blue-700 rounded-xl flex items-center justify-center text-xl mb-5">
+                        <i class="fas fa-id-card"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">PAN Card Services</h3>
+                    <p class="text-slate-600 text-sm mb-4">New PAN applications, name/DOB corrections, lost PAN reprint, and Aadhaar-PAN linking services.</p>
+                </div>
+                <a href="https://wa.me/918331830013?text=Hello%20Digi%20Bhargavi%20Consultancy,%20I%20want%20to%20apply%20for%20PAN%20Card%20Services." target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-sm font-bold text-blue-700 hover:text-blue-800 mt-2">
+                    Inquire on WhatsApp <i class="fas fa-chevron-right ml-1.5 text-xs"></i>
+                </a>
+            </div>
+
+            <!-- Service 2: GST Registration & Filing -->
+            <div class="service-card bg-white rounded-2xl p-6 border border-slate-200 transition duration-300 flex flex-col justify-between">
+                <div>
+                    <div class="w-12 h-12 bg-emerald-100 text-emerald-700 rounded-xl flex items-center justify-center text-xl mb-5">
+                        <i class="fas fa-file-invoice-dollar"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">GST Registration & Filing</h3>
+                    <p class="text-slate-600 text-sm mb-4">New GST registration for businesses, monthly/quarterly GST return filings, and GST amendments.</p>
+                </div>
+                <a href="https://wa.me/918331830013?text=Hello%20Digi%20Bhargavi%20Consultancy,%20I%20need%20help%20with%20GST%20Registration%20/%20Filing." target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-sm font-bold text-emerald-700 hover:text-emerald-800 mt-2">
+                    Inquire on WhatsApp <i class="fas fa-chevron-right ml-1.5 text-xs"></i>
+                </a>
+            </div>
+
+            <!-- Service 3: Passport Assistance -->
+            <div class="service-card bg-white rounded-2xl p-6 border border-slate-200 transition duration-300 flex flex-col justify-between">
+                <div>
+                    <div class="w-12 h-12 bg-indigo-100 text-indigo-700 rounded-xl flex items-center justify-center text-xl mb-5">
+                        <i class="fas fa-passport"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Passport Assistance</h3>
+                    <p class="text-slate-600 text-sm mb-4">Fresh passport application, renewal/re-issue, Tatkaal booking, and PSK appointment scheduling.</p>
+                </div>
+                <a href="https://wa.me/918331830013?text=Hello%20Digi%20Bhargavi%20Consultancy,%20I%20need%20Passport%20Assistance." target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-sm font-bold text-indigo-700 hover:text-indigo-800 mt-2">
+                    Inquire on WhatsApp <i class="fas fa-chevron-right ml-1.5 text-xs"></i>
+                </a>
+            </div>
+
+            <!-- Service 4: FSSAI Food License -->
+            <div class="service-card bg-white rounded-2xl p-6 border border-slate-200 transition duration-300 flex flex-col justify-between">
+                <div>
+                    <div class="w-12 h-12 bg-amber-100 text-amber-700 rounded-xl flex items-center justify-center text-xl mb-5">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">FSSAI Food License</h3>
+                    <p class="text-slate-600 text-sm mb-4">Basic registration, State & Central FSSAI licenses for restaurants, kirana stores, cloud kitchens & food traders.</p>
+                </div>
+                <a href="https://wa.me/918331830013?text=Hello%20Digi%20Bhargavi%20Consultancy,%20I%20want%20to%20apply%20for%20an%20FSSAI%20Food%20License." target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-sm font-bold text-amber-700 hover:text-amber-800 mt-2">
+                    Inquire on WhatsApp <i class="fas fa-chevron-right ml-1.5 text-xs"></i>
+                </a>
+            </div>
+
+            <!-- Service 5: Labour Registration -->
+            <div class="service-card bg-white rounded-2xl p-6 border border-slate-200 transition duration-300 flex flex-col justify-between">
+                <div>
+                    <div class="w-12 h-12 bg-purple-100 text-purple-700 rounded-xl flex items-center justify-center text-xl mb-5">
+                        <i class="fas fa-hard-hat"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Labour License & Registration</h3>
+                    <p class="text-slate-600 text-sm mb-4">AP Shops & Establishments registration, Labour license renewals, and worker welfare registrations.</p>
+                </div>
+                <a href="https://wa.me/918331830013?text=Hello%20Digi%20Bhargavi%20Consultancy,%20I%20need%20help%20with%20Labour%20Registration." target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-sm font-bold text-purple-700 hover:text-purple-800 mt-2">
+                    Inquire on WhatsApp <i class="fas fa-chevron-right ml-1.5 text-xs"></i>
+                </a>
+            </div>
+
+            <!-- Service 6: MSME / Udyam & Other Digital Services -->
+            <div class="service-card bg-white rounded-2xl p-6 border border-slate-200 transition duration-300 flex flex-col justify-between">
+                <div>
+                    <div class="w-12 h-12 bg-rose-100 text-rose-700 rounded-xl flex items-center justify-center text-xl mb-5">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Udyam (MSME) & Digital Services</h3>
+                    <p class="text-slate-600 text-sm mb-4">MSME Udyam certificates, Partnership Firm deeds, online applications, and digital documentation support.</p>
+                </div>
+                <a href="https://wa.me/918331830013?text=Hello%20Digi%20Bhargavi%20Consultancy,%20I%20need%20help%20with%20Udyam%20/%20Digital%20Services." target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-sm font-bold text-rose-700 hover:text-rose-800 mt-2">
+                    Inquire on WhatsApp <i class="fas fa-chevron-right ml-1.5 text-xs"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Document Readiness Checklist -->
+    <section id="checklist" class="py-16 bg-slate-100 border-y border-slate-200">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10">
+                <span class="text-blue-600 font-bold text-sm uppercase tracking-wider">Save Time Before Visiting</span>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-2">Interactive Document Checklist</h2>
+                <p class="text-slate-600 mt-2">Select a service below to check the required documents and tick off what you already have ready.</p>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 sm:p-8">
+                <div class="mb-6">
+                    <label for="serviceSelect" class="block text-sm font-bold text-slate-700 mb-2">Choose Service:</label>
+                    <select id="serviceSelect" onchange="updateChecklist()" class="w-full p-3.5 bg-slate-50 border border-slate-300 rounded-xl text-slate-900 font-semibold focus:ring-2 focus:ring-blue-600 focus:border-blue-600 outline-none">
+                        <option value="pan">PAN Card (New / Correction)</option>
+                        <option value="gst">GST Registration</option>
+                        <option value="passport">Passport Application</option>
+                        <option value="fssai">FSSAI Food License</option>
+                        <option value="labour">Labour / Shop Establishment License</option>
+                    </select>
+                </div>
+
+                <div id="checklistItems" class="space-y-3 mb-6">
+                    <!-- Dynamic items populated by JS -->
+                </div>
+
+                <div class="bg-blue-50 border border-blue-100 rounded-xl p-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+                    <div class="text-sm text-blue-900">
+                        <span class="font-bold" id="readyCount">0 of 0</span> documents checked. Ready to start?
+                    </div>
+                    <button type="button" onclick="sendChecklistWhatsApp()" class="w-full sm:w-auto px-5 py-2.5 bg-green-600 hover:bg-green-700 text-white font-bold text-sm rounded-lg shadow transition flex items-center justify-center">
+                        <i class="fab fa-whatsapp mr-2 text-base"></i> Send Status on WhatsApp
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section id="about" class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+            <div class="p-6">
+                <div class="w-14 h-14 bg-blue-100 text-blue-700 rounded-2xl flex items-center justify-center text-2xl mx-auto mb-4">
+                    <i class="fas fa-bolt"></i>
+                </div>
+                <h3 class="text-lg font-bold text-slate-900 mb-2">Quick Turnaround</h3>
+                <p class="text-slate-600 text-sm">Same-day application submission with real-time tracking updates directly to your phone.</p>
+            </div>
+            <div class="p-6">
+                <div class="w-14 h-14 bg-amber-100 text-amber-700 rounded-2xl flex items-center justify-center text-2xl mx-auto mb-4">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3 class="text-lg font-bold text-slate-900 mb-2">100% Data Privacy</h3>
+                <p class="text-slate-600 text-sm">Your Aadhaar, PAN, and business records are handled securely and strictly for official filings.</p>
+            </div>
+            <div class="p-6">
+                <div class="w-14 h-14 bg-emerald-100 text-emerald-700 rounded-2xl flex items-center justify-center text-2xl mx-auto mb-4">
+                    <i class="fas fa-handshake"></i>
+                </div>
+                <h3 class="text-lg font-bold text-slate-900 mb-2">Local Giddalur Support</h3>
+                <p class="text-slate-600 text-sm">Transparent pricing and friendly in-person guidance right here in Giddalur.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Footer -->
+    <footer id="contact" class="bg-slate-900 text-slate-300 pt-16 pb-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 pb-12 border-b border-slate-800">
+                <!-- Brand Info -->
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold text-xl">
+                            DB
+                        </div>
+                        <span class="font-extrabold text-xl text-white">Digi Bhargavi Consultancy</span>
+                    </div>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Empowering individuals and local businesses in Giddalur with fast, accurate, and compliant government & digital consultancy services.
+                    </p>
+                </div>
+
+                <!-- Direct Contact -->
+                <div>
+                    <h4 class="text-white font-bold text-base uppercase tracking-wider mb-4">Direct Contact</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt text-blue-400 w-5"></i>
+                            <a href="tel:8331830013" class="hover:text-white transition">+91 83318 30013</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fab fa-whatsapp text-green-400 w-5"></i>
+                            <a href="https://wa.me/918331830013" target="_blank" rel="noopener noreferrer" class="hover:text-white transition">Chat on WhatsApp (8331830013)</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope text-amber-400 w-5"></i>
+                            <a href="mailto:digibhargaviconsultancy@gmail.com" class="hover:text-white transition break-all">digibhargaviconsultancy@gmail.com</a>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-rose-400 w-5 mt-1"></i>
+                            <span>Giddalur, Andhra Pradesh, India</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Working Hours -->
+                <div>
+                    <h4 class="text-white font-bold text-base uppercase tracking-wider mb-4">Working Hours</h4>
+                    <ul class="space-y-2 text-sm text-slate-400">
+                        <li class="flex justify-between"><span>Monday - Saturday:</span> <span class="text-white font-medium">9:30 AM – 8:30 PM</span></li>
+                        <li class="flex justify-between"><span>Sunday:</span> <span class="text-amber-400 font-medium">By Appointment / WhatsApp</span></li>
+                    </ul>
+                    <div class="mt-6">
+                        <a href="https://wa.me/918331830013?text=Hello%20Digi%20Bhargavi%20Consultancy,%20I%20would%20like%20to%20book%20a%20visit." target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center w-full px-4 py-3 bg-blue-600 hover:bg-blue-700 text-white font-bold text-sm rounded-xl transition">
+                            Book Appointment via WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-8 text-center text-xs text-slate-500">
+                &copy; 2026 Digi Bhargavi Consultancy, Giddalur. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/918331830013?text=Hello%20Digi%20Bhargavi%20Consultancy,%20I%20have%20an%20inquiry." target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp" class="fixed bottom-6 right-6 w-14 h-14 bg-green-600 hover:bg-green-700 text-white rounded-full shadow-2xl flex items-center justify-center text-3xl z-50 transition transform hover:scale-110">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Interactive Checklist Script -->
+    <script>
+        const checklists = {
+            pan: {
+                title: "PAN Card Services",
+                docs: [
+                    "Aadhaar Card (with linked mobile number for OTP)",
+                    "2 Recent Passport Size Photographs",
+                    "Signature on white paper (for physical/scan)",
+                    "Old PAN Copy / Proof of Date of Birth (if correction)"
+                ]
+            },
+            gst: {
+                title: "GST Registration",
+                docs: [
+                    "PAN Card & Aadhaar Card of Proprietor / Partners",
+                    "Passport Size Photo of Applicant",
+                    "Electricity Bill / Property Tax Receipt of Business Place",
+                    "Rental Agreement / NOC from Owner",
+                    "Bank Passbook / Cancelled Cheque"
+                ]
+            },
+            passport: {
+                title: "Passport Assistance",
+                docs: [
+                    "Aadhaar Card",
+                    "10th Class Marks Memo (for ECNR category)",
+                    "PAN Card or Voter ID",
+                    "Old Passport (if applying for Renewal)"
+                ]
+            },
+            fssai: {
+                title: "FSSAI Food License",
+                docs: [
+                    "Aadhaar Card & PAN Card of Business Owner",
+                    "Passport Size Photograph",
+                    "Shop Rental Agreement / Ownership Proof",
+                    "Business Name & Food Category Details"
+                ]
+            },
+            labour: {
+                title: "Labour / Shop Registration",
+                docs: [
+                    "Aadhaar Card & PAN Card of Employer",
+                    "Shop Photo with Name Board visible",
+                    "Rental Agreement / Property Tax Receipt",
+                    "Employee Count & Business Start Date Details"
+                ]
+            }
+        };
+
+        // Render document checkboxes based on selected service
+        function updateChecklist() {
+            const selected = document.getElementById('serviceSelect').value;
+            const container = document.getElementById('checklistItems');
+            const items = checklists[selected].docs;
+            
+            container.innerHTML = '';
+            items.forEach((doc) => {
+                const div = document.createElement('label');
+                div.className = 'flex items-center p-3.5 bg-slate-50 hover:bg-slate-100 rounded-xl border border-slate-200 cursor-pointer transition';
+                div.innerHTML = `
+                    <input type="checkbox" class="doc-checkbox w-5 h-5 text-blue-600 rounded focus:ring-blue-500 mr-3.5" onchange="updateCount()">
+                    <span class="text-slate-800 text-sm font-medium">${doc}</span>
+                `;
+                container.appendChild(div);
+            });
+            updateCount();
+        }
+
+        // Update live counter of checked items
+        function updateCount() {
+            const checkboxes = document.querySelectorAll('.doc-checkbox');
+            const checked = document.querySelectorAll('.doc-checkbox:checked').length;
+            document.getElementById('readyCount').innerText = `${checked} of ${checkboxes.length}`;
+        }
+
+        // Open WhatsApp with pre-filled readiness status
+        function sendChecklistWhatsApp() {
+            const selected = document.getElementById('serviceSelect').value;
+            const serviceTitle = checklists[selected].title;
+            const checkboxes = document.querySelectorAll('.doc-checkbox');
+            const checked = document.querySelectorAll('.doc-checkbox:checked').length;
+            
+            const msg = `Hello Digi Bhargavi Consultancy, I am interested in *${serviceTitle}*. I have ${checked} out of ${checkboxes.length} required documents ready. Please guide me further.`;
+            window.open(`https://wa.me/918331830013?text=${encodeURIComponent(msg)}`, '_blank', 'noopener,noreferrer');
+        }
+
+        // Initialize checklist on page load
+        window.onload = function() {
+            updateChecklist();
+        };
+    </script>
+</body>
+</html>
